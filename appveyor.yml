@@ -24,6 +24,7 @@ environment:
 
 build_script:
   - travis-tool.sh install_deps
+  - r_packages: ggplot2
 
 test_script:
   - travis-tool.sh run_tests
@@ -51,5 +52,3 @@ artifacts:
   - path: '\*_*.zip'
     name: Bits
 
-r_packages:
-  - ggplot2 
